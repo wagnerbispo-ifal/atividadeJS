@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ATIVIDADE MAURÍCIO (FUNÇÕES JS)</h1>
+    <p>Escolha a função</p>
+
+    <div class="menu">
+        <button onclick="mostrarConteudo('maiorMenor')">MAIOR_MENOR</button>
+        <button onclick="mostrarConteudo('vogal')">VOGAL</button>
+        <button onclick="mostrarConteudo('limites')">LIMITES</button>
+        <button onclick="mostrarConteudo('ordem')">ORDEM</button>
+        <button onclick="mostrarConteudo('positivoNegativo')">POSITIVO_NEGATIVO</button>
+        <button onclick="mostrarConteudo('parImpar')">PAR_IMPAR</button>
+    </div>
+
+    <div id="maiorMenor" class="content">
+        <h2>Função MAIOR_MENOR</h2>
+        <input type="number" id="a" placeholder="Digite o valor de 'a'">
+        <input type="number" id="b" placeholder="Digite o valor de 'b'">
+        <input type="number" id="c" placeholder="Digite o valor de 'c'">
+        <input type="number" id="d" placeholder="Digite o valor de 'd'">
+        <input type="number" id="e" placeholder="Digite o valor de 'e'">
+        <button onclick="maiorMenor()">Verificar Maior e Menor</button>
+        <p id="resultadoMaiorMenor"></p>
+    </div>
+
+    <div id="vogal" class="content">
+        <h2>Função VOGAL</h2>
+        <input type="text" id="caractere" maxlength="1" placeholder="Digite um caractere">
+        <button onclick="verificarVogal()">Verificar Vogal</button>
+        <p id="resultadoVogal"></p>
+    </div>
+
+    <div id="limites" class="content">
+        <h2>Função LIMITES</h2>
+        <input type="number" id="li" placeholder="Limite Inferior">
+        <input type="number" id="ls" placeholder="Limite Superior">
+        <button onclick="limites()">Calcular Pares e Soma</button>
+        <p id="resultadoLimites"></p>
+    </div>
+
+    <div id="ordem" class="content">
+        <h2>Função ORDEM</h2>
+        <input type="number" id="x" placeholder="Digite o valor de 'x'">
+        <input type="number" id="y" placeholder="Digite o valor de 'y'">
+        <input type="number" id="z" placeholder="Digite o valor de 'z'">
+        <button onclick="ordenar()">Ordenar Números</button>
+        <p id="resultadoOrdem"></p>
+    </div>
+
+    <div id="positivoNegativo" class="content">
+        <h2>Função POSITIVO_NEGATIVO</h2>
+        <input type="number" id="valor" placeholder="Digite um valor">
+        <button onclick="positivoNegativo()">Verificar Positivo ou Negativo</button>
+        <p id="resultadoPositivoNegativo"></p>
+    </div>
+
+    <div id="parImpar" class="content">
+        <h2>Função PAR_IMPAR</h2>
+        <input type="number" id="numero" placeholder="Digite um número">
+        <button onclick="parImpar()">Verificar Par ou Ímpar</button>
+        <p id="resultadoParImpar"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
